@@ -1,5 +1,11 @@
 <template>
     <div>
-        Mistrai AI Component
+        {{ label }}
     </div>
 </template>
+
+<script setup>
+defineProps({
+    label: String
+})
+</script>

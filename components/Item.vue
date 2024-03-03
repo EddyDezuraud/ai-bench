@@ -9,11 +9,14 @@
         <div :class="$style.content">
             <slot></slot>
         </div>
+        <input :class="$style.input" type="text" v-model="model" placeholder="Libéllé du bouton">
     </div>
 </template>
 
 <script setup>
 import { defineProps } from 'vue';
+
+const model = defineModel()
 
 const props = defineProps({
     title: String,
@@ -36,6 +39,16 @@ const props = defineProps({
 
 .logo img {
     height: 100%;
+    color: white;
+}
+.input {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    width: calc(100% - 20px);
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 5px;
     color: white;
 }
 </style>

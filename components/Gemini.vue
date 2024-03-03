@@ -1,5 +1,11 @@
 <template>
     <div>
-        Gemini Component
+        {{ label }}
     </div>
 </template>
+
+<script setup>
+defineProps({
+    label: String
+})
+</script>
