@@ -1,0 +1,6 @@
+Créé un composant en Nuxt3 avec ts en composition api script setup.
+Ce composant doit afficher un bouton avec bords ronds.
+Ce composant doit recevoir en props un label et faire un emit du click.
+Le bouton doit avoir une couleur de fond automatiquement générée via une computed qui va se baser sur la string props.label et autogénérer une couleur RGAA compliant qui match avec un fond noir et un texte blanc à l'interieur du bouton. 
+Pour ça tu dois faire toi même les fonctions sans utiliser de librairie tierce.
+Si le label change, la couleur de fond du bouton doit automatiquement se mettre en jour.
