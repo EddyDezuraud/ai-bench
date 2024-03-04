@@ -33,6 +33,13 @@ const props = defineProps({
    padding: 80px 20px;
 }
 
+.title {
+    font-size: 12px;
+    font-weight: 900;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #ffffff20;
+}
+
 .logo {
     height: 50px;
 }
